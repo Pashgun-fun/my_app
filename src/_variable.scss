@@ -1,16 +1,18 @@
 //Colors
 $welcomeColorFirst: #ff5733;
 $welcomeColorSecond: #333;
+$backgroundColor: #f0f0f0;
+$borderColor: #e5e5e5;
 
 //Width
 $widthLeftSection: 5%;
 $widthCenterSection: 20%;
-$widthRightSection: 100% - ($widthCenterSection+$widthLeftSection);
+$widthRightSection: 100% - ($widthCenterSection + $widthLeftSection);
 
 //Delay animations
-$delayLeftSection: 2s;
-$delayCenterSection: 2.8s;
-$delayRightSection: 2.2s;
+$delayLeftSection: 2.95s;
+$delayCenterSection: 3.75s;
+$delayRightSection: 3.15s;
 
 //Duration animations
 $durationWelcomeAnimate: 3s;

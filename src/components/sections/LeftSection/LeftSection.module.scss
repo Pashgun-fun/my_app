@@ -1,60 +1,53 @@
 @import "../../../_variable";
 
 .leftSection {
-  width: $widthCenterSection;
+  width: $widthLeftSection;
   height: 100vh;
   animation: animate $durationLeftSection linear $delayLeftSection forwards;
   display: block;
+  box-sizing: border-box;
 }
 
 @keyframes animate {
   100% {
-    background: $welcomeColorFirst;
+    background: $backgroundColor;
     border-top: 0 solid $welcomeColorSecond;
     transform: translate(0, 0);
+    border-right: 2px solid $borderColor;
   }
   98% {
-    background: $welcomeColorFirst;
     border-top: 1.6vh solid $welcomeColorSecond;
     transform: translate(0, 2%);
   }
   96% {
-    background: $welcomeColorFirst;
     border-top: 3.2vh solid $welcomeColorSecond;
     transform: translate(0, 4%);
   }
   94% {
-    background: $welcomeColorFirst;
     border-top: 4.8vh solid $welcomeColorSecond;
     transform: translate(0, 6%);
   }
   92% {
-    background: $welcomeColorFirst;
     border-top: 6.4vh solid $welcomeColorSecond;
     transform: translate(0, 8%);
   }
   90% {
-    background: $welcomeColorFirst;
     border-top: 8vh solid $welcomeColorSecond;
     transform: translate(0, 10%);
   }
   80% {
-    background: $welcomeColorFirst;
     border-top: 16vh solid $welcomeColorSecond;
     transform: translate(0, 20%);
   }
   70% {
-    background: $welcomeColorFirst;
     border-top: 24vh solid $welcomeColorSecond;
     transform: translate(0, 30%);
   }
   60% {
-    background: $welcomeColorFirst;
     border-top: 32vh solid $welcomeColorSecond;
     transform: translate(0, 40%);
   }
   50% {
-    background: $welcomeColorFirst;
     border-top: 40vh solid $welcomeColorSecond;
     transform: translate(0, 50%);
   }
@@ -102,5 +95,7 @@
     background: $welcomeColorFirst;
     border-top: 80vh solid $welcomeColorSecond;
     transform: translate(0, 100%);
+    border-right: 0 solid $borderColor;
+
   }
 }

@@ -1,58 +1,79 @@
 .rightSection {
   width: 75%;
   height: 100vh;
-  animation: animate 2.6s linear 2.2s forwards;
-  display: block;
+  animation: animate 2.6s linear 3.15s forwards;
+  display: flex;
+  box-sizing: border-box;
+  position: relative;
+  transition: 0.6s all linear;
+}
+
+.hideBlock {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  background: url("../../../assets/img/right-arrow.png") no-repeat center;
+  background-size: cover;
+  transform: scale(-1);
+  transition: 0.2s all linear;
+}
+.hideBlock:hover {
+  cursor: pointer;
+  filter: contrast(0%);
+}
+
+.hideElement {
+  transition: 0.6s all linear;
+  width: 40px;
+  padding: 0 5px;
+  border-right: 2px solid #e5e5e5;
+  flex-grow: 0 !important;
+}
+.hideElement > .hideBlock {
+  transform: scale(1);
 }
 
 @keyframes animate {
   100% {
-    background: #ff5733;
+    background: #f0f0f0;
     border-top: 0;
     transform: translate(0, 0);
   }
   98% {
-    background: #ff5733;
     border-top: 1.6vh solid #333;
     transform: translate(0, 2%);
   }
   96% {
-    background: #ff5733;
     border-top: 3.2vh solid #333;
     transform: translate(0, 4%);
   }
   94% {
-    background: #ff5733;
     border-top: 4.8vh solid #333;
     transform: translate(0, 6%);
   }
   92% {
-    background: #ff5733;
     border-top: 6.4vh solid #333;
     transform: translate(0, 8%);
   }
   90% {
-    background: #ff5733;
     border-top: 8vh solid #333;
     transform: translate(0, 10%);
   }
   80% {
-    background: #ff5733;
     border-top: 16vh solid #333;
     transform: translate(0, 20%);
   }
   70% {
-    background: #ff5733;
     border-top: 24vh solid #333;
     transform: translate(0, 30%);
   }
   60% {
-    background: #ff5733;
     border-top: 32vh solid #333;
     transform: translate(0, 40%);
   }
   50% {
-    background: #ff5733;
     border-top: 40vh solid #333;
     transform: translate(0, 50%);
   }

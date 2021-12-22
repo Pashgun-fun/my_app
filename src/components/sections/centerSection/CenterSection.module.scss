@@ -5,56 +5,78 @@
   height: 100vh;
   animation: animate $durationCenterSection linear $delayCenterSection forwards;
   display: block;
+  box-sizing: border-box;
+  transition: 0.8s all linear;
+}
+
+.hideBlock {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  background: url("../../../assets/img/right-arrow.png") no-repeat center;
+  background-size: cover;
+  transform: scale(-1);
+  transition: 0.2s all linear;
+
+  &:hover {
+    cursor: pointer;
+    filter: contrast(0%);
+  }
+}
+
+.hideElement {
+  transition: 0.6s all linear;
+  width: 40px;
+  padding: 0 5px;
+  border-right: 2px solid $borderColor;
+
+  > .hideBlock {
+    transform: scale(1);
+  }
 }
 
 @keyframes animate {
   100% {
-    background: $welcomeColorFirst;
+    background: $backgroundColor;
     border-top: 0 solid $welcomeColorSecond;
     transform: translate(0, 0);
+    border-right: 2px solid $borderColor;
   }
   98% {
-    background: $welcomeColorFirst;
     border-top: 1.6vh solid $welcomeColorSecond;
     transform: translate(0, 2%);
   }
   96% {
-    background: $welcomeColorFirst;
     border-top: 3.2vh solid $welcomeColorSecond;
     transform: translate(0, 4%);
   }
   94% {
-    background: $welcomeColorFirst;
     border-top: 4.8vh solid $welcomeColorSecond;
     transform: translate(0, 6%);
   }
   92% {
-    background: $welcomeColorFirst;
     border-top: 6.4vh solid $welcomeColorSecond;
     transform: translate(0, 8%);
   }
   90% {
-    background: $welcomeColorFirst;
     border-top: 8vh solid $welcomeColorSecond;
     transform: translate(0, 10%);
   }
   80% {
-    background: $welcomeColorFirst;
     border-top: 16vh solid $welcomeColorSecond;
     transform: translate(0, 20%);
   }
   70% {
-    background: $welcomeColorFirst;
     border-top: 24vh solid $welcomeColorSecond;
     transform: translate(0, 30%);
   }
   60% {
-    background: $welcomeColorFirst;
     border-top: 32vh solid $welcomeColorSecond;
     transform: translate(0, 40%);
   }
   50% {
-    background: $welcomeColorFirst;
     border-top: 40vh solid $welcomeColorSecond;
     transform: translate(0, 50%);
   }
@@ -102,5 +124,6 @@
     background: $welcomeColorFirst;
     border-top: 80vh solid $welcomeColorSecond;
     transform: translate(0, 100%);
+    border-right: 0 solid $borderColor;
   }
 }
