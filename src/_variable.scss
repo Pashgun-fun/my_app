@@ -1,13 +1,25 @@
+//Colors
 $welcomeColorFirst: #ff5733;
 $welcomeColorSecond: #333;
-$durationWelcomeAnimate: 4s;
+
+//Width
+$widthLeftSection: 5%;
+$widthCenterSection: 20%;
+$widthRightSection: 100% - ($widthCenterSection+$widthLeftSection);
+
+//Delay animations
+$delayLeftSection: 2s;
+$delayCenterSection: 2.8s;
+$delayRightSection: 2.2s;
+
+//Duration animations
+$durationWelcomeAnimate: 3s;
+$durationCenterSection: 2s;
+$durationRightSection: $durationCenterSection - ($delayRightSection - $delayCenterSection);
+$durationLeftSection: $durationCenterSection - ($delayLeftSection - $delayCenterSection);
+
+//zIndex
 $zIndexWelcome: 700;
-$zIndexSections: 700;
-$durationLeftSection: 3s;
-$durationSections: 0.05s;
-$delaySections: $durationWelcomeAnimate+0.01s;
-$delayLeftSection: 4.1s;
-$delayRightSection: 4.4s;
-$durationRightSection: $delayLeftSection - ($delayRightSection - $delayLeftSection);
-$widthLeftSection: 20vw;
-$widthRightSection: 100vw - $widthLeftSection;
+$zIndexSections: 500;
+
+

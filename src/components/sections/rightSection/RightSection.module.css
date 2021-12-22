@@ -1,0 +1,106 @@
+.rightSection {
+  width: 75%;
+  height: 100vh;
+  animation: animate 2.6s linear 2.2s forwards;
+  display: block;
+}
+
+@keyframes animate {
+  100% {
+    background: #ff5733;
+    border-top: 0;
+    transform: translate(0, 0);
+  }
+  98% {
+    background: #ff5733;
+    border-top: 1.6vh solid #333;
+    transform: translate(0, 2%);
+  }
+  96% {
+    background: #ff5733;
+    border-top: 3.2vh solid #333;
+    transform: translate(0, 4%);
+  }
+  94% {
+    background: #ff5733;
+    border-top: 4.8vh solid #333;
+    transform: translate(0, 6%);
+  }
+  92% {
+    background: #ff5733;
+    border-top: 6.4vh solid #333;
+    transform: translate(0, 8%);
+  }
+  90% {
+    background: #ff5733;
+    border-top: 8vh solid #333;
+    transform: translate(0, 10%);
+  }
+  80% {
+    background: #ff5733;
+    border-top: 16vh solid #333;
+    transform: translate(0, 20%);
+  }
+  70% {
+    background: #ff5733;
+    border-top: 24vh solid #333;
+    transform: translate(0, 30%);
+  }
+  60% {
+    background: #ff5733;
+    border-top: 32vh solid #333;
+    transform: translate(0, 40%);
+  }
+  50% {
+    background: #ff5733;
+    border-top: 40vh solid #333;
+    transform: translate(0, 50%);
+  }
+  40% {
+    background: #ff5733;
+    border-top: 48vh solid #333;
+    transform: translate(0, 60%);
+  }
+  30% {
+    background: #ff5733;
+    border-top: 56vh solid #333;
+    transform: translate(0, 70%);
+  }
+  20% {
+    background: #ff5733;
+    border-top: 64vh solid #333;
+    transform: translate(0, 80%);
+  }
+  10% {
+    background: #ff5733;
+    border-top: 72vh solid #333;
+    transform: translate(0, 90%);
+  }
+  8% {
+    background: #ff5733;
+    border-top: 73.6vh solid #333;
+    transform: translate(0, 92%);
+  }
+  6% {
+    background: #ff5733;
+    border-top: 75.2vh solid #333;
+    transform: translate(0, 94%);
+  }
+  4% {
+    background: #ff5733;
+    border-top: 76.8vh solid #333;
+    transform: translate(0, 96%);
+  }
+  2% {
+    background: #ff5733;
+    border-top: 78.4vh solid #333;
+    transform: translate(0, 98%);
+  }
+  0% {
+    background: #ff5733;
+    border-top: 80vh solid #333;
+    transform: translate(0, 100%);
+  }
+}
+
+/*# sourceMappingURL=RightSection.module.css.map */

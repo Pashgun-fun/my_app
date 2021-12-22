@@ -6,7 +6,7 @@ import Sections from "./components/section/Section";
 function App() {
   return (
    <div>
-        <Welcome />
+        <Welcome name = 'pavel antonov' profession = 'web developer'/>
         <Sections />
    </div>
   );

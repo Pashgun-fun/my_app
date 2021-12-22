@@ -1,100 +1,100 @@
 @import "../../../_variable";
 
-.rightSection {
-  width: $widthRightSection;
+.leftSection {
+  width: $widthCenterSection;
   height: 100vh;
-  animation: animate $durationRightSection linear $delayRightSection forwards;
+  animation: animate $durationLeftSection linear $delayLeftSection forwards;
   display: block;
 }
 
 @keyframes animate {
   100% {
     background: $welcomeColorFirst;
-    border-top: 0;
+    border-top: 0 solid $welcomeColorSecond;
     transform: translate(0, 0);
   }
   98% {
-        background: $welcomeColorFirst;
-    border-top: 1.6vh  solid $welcomeColorSecond;
+    background: $welcomeColorFirst;
+    border-top: 1.6vh solid $welcomeColorSecond;
     transform: translate(0, 2%);
   }
   96% {
-        background: $welcomeColorFirst;
-    border-top: 3.2vh  solid$welcomeColorSecond;
+    background: $welcomeColorFirst;
+    border-top: 3.2vh solid $welcomeColorSecond;
     transform: translate(0, 4%);
   }
   94% {
-        background: $welcomeColorFirst;
-    border-top: 4.8vh  solid$welcomeColorSecond;
+    background: $welcomeColorFirst;
+    border-top: 4.8vh solid $welcomeColorSecond;
     transform: translate(0, 6%);
   }
   92% {
-        background: $welcomeColorFirst;
-    border-top: 6.4vh  solid$welcomeColorSecond;
+    background: $welcomeColorFirst;
+    border-top: 6.4vh solid $welcomeColorSecond;
     transform: translate(0, 8%);
   }
   90% {
-        background: $welcomeColorFirst;
-    border-top: 8vh  solid$welcomeColorSecond;
+    background: $welcomeColorFirst;
+    border-top: 8vh solid $welcomeColorSecond;
     transform: translate(0, 10%);
   }
   80% {
-        background: $welcomeColorFirst;
-    border-top: 16vh  solid$welcomeColorSecond;
+    background: $welcomeColorFirst;
+    border-top: 16vh solid $welcomeColorSecond;
     transform: translate(0, 20%);
   }
   70% {
-        background: $welcomeColorFirst;
-    border-top: 24vh  solid$welcomeColorSecond;
+    background: $welcomeColorFirst;
+    border-top: 24vh solid $welcomeColorSecond;
     transform: translate(0, 30%);
   }
   60% {
-        background: $welcomeColorFirst;
+    background: $welcomeColorFirst;
     border-top: 32vh solid $welcomeColorSecond;
     transform: translate(0, 40%);
   }
   50% {
-        background: $welcomeColorFirst;
+    background: $welcomeColorFirst;
     border-top: 40vh solid $welcomeColorSecond;
     transform: translate(0, 50%);
   }
   40% {
-        background: $welcomeColorFirst;
+    background: $welcomeColorFirst;
     border-top: 48vh solid $welcomeColorSecond;
     transform: translate(0, 60%);
   }
   30% {
-        background: $welcomeColorFirst;
-    border-top: 56vh  solid$welcomeColorSecond;
+    background: $welcomeColorFirst;
+    border-top: 56vh solid $welcomeColorSecond;
     transform: translate(0, 70%);
   }
   20% {
-        background: $welcomeColorFirst;
+    background: $welcomeColorFirst;
     border-top: 64vh solid $welcomeColorSecond;
     transform: translate(0, 80%);
   }
   10% {
-        background: $welcomeColorFirst;
+    background: $welcomeColorFirst;
     border-top: 72vh solid $welcomeColorSecond;
     transform: translate(0, 90%);
   }
   8% {
-        background: $welcomeColorFirst;
+    background: $welcomeColorFirst;
     border-top: 73.6vh solid $welcomeColorSecond;
     transform: translate(0, 92%);
   }
   6% {
-        background: $welcomeColorFirst;
+    background: $welcomeColorFirst;
     border-top: 75.2vh solid $welcomeColorSecond;
     transform: translate(0, 94%);
   }
   4% {
-        background: $welcomeColorFirst;
+    background: $welcomeColorFirst;
     border-top: 76.8vh solid $welcomeColorSecond;
     transform: translate(0, 96%);
   }
   2% {
-        background: $welcomeColorFirst;
+    background: $welcomeColorFirst;
     border-top: 78.4vh solid $welcomeColorSecond;
     transform: translate(0, 98%);
   }

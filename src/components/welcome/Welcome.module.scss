@@ -4,6 +4,7 @@
 .welcome{
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
@@ -13,6 +14,10 @@
   letter-spacing: 5px;
   z-index: $zIndexWelcome;
   animation: animate linear $durationWelcomeAnimate forwards;
+
+  & span{
+    font-size: 1rem;
+  }
 }
 
 @keyframes animate {
@@ -21,8 +26,5 @@
   }
   50%,99.9%{
     background: $welcomeColorSecond;
-  }
-  100%{
-    opac
   }
 }
