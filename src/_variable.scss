@@ -1,0 +1,13 @@
+$welcomeColorFirst: #ff5733;
+$welcomeColorSecond: #333;
+$durationWelcomeAnimate: 4s;
+$zIndexWelcome: 700;
+$zIndexSections: 700;
+$durationLeftSection: 3s;
+$durationSections: 0.05s;
+$delaySections: $durationWelcomeAnimate+0.01s;
+$delayLeftSection: 4.1s;
+$delayRightSection: 4.4s;
+$durationRightSection: $delayLeftSection - ($delayRightSection - $delayLeftSection);
+$widthLeftSection: 20vw;
+$widthRightSection: 100vw - $widthLeftSection;

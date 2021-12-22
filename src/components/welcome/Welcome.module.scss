@@ -1,0 +1,28 @@
+@import "../../_variable";
+
+
+.welcome{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  height: 100vh;
+  color: white;
+  font-size: 5rem;
+  letter-spacing: 5px;
+  z-index: $zIndexWelcome;
+  animation: animate linear $durationWelcomeAnimate forwards;
+}
+
+@keyframes animate {
+  0%,49.9%{
+    background: $welcomeColorFirst;
+  }
+  50%,99.9%{
+    background: $welcomeColorSecond;
+  }
+  100%{
+    opac
+  }
+}

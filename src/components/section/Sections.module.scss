@@ -1,0 +1,17 @@
+@import "../../_variable";
+
+.wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  flex-direction: row;
+  z-index: $zIndexSections;
+  animation: animate $durationSections linear 3.1s forwards;
+}
+
+@keyframes animate {
+  to {
+    display: flex !important;
+  }
+}
