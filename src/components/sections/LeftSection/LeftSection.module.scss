@@ -4,8 +4,64 @@
   width: $widthLeftSection;
   height: 100vh;
   animation: animate $durationLeftSection linear $delayLeftSection forwards;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   box-sizing: border-box;
+
+  &__wrapper {
+    width: 97%;
+    height: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__logo {
+    width: 100%;
+    font-size: 3rem;
+    color: $textColor;
+    text-align: center;
+    animation: animateLogo 2s linear infinite alternate;
+  }
+}
+
+
+@keyframes animateLogo {
+  0% {
+    letter-spacing: 5px;
+  }
+  10% {
+    letter-spacing: -4px;
+  }
+  20% {
+    letter-spacing: -13px;
+  }
+  30% {
+    letter-spacing: -22px;
+  }
+  40% {
+    letter-spacing: -31px;
+  }
+  50% {
+    letter-spacing: -40px;
+  }
+  60% {
+    letter-spacing: -44px;
+  }
+  70% {
+    letter-spacing: -48px;
+  }
+  80% {
+    letter-spacing: -52px;
+  }
+  90% {
+    letter-spacing: -56px;
+  }
+  100% {
+    letter-spacing: -55px;
+  }
 }
 
 @keyframes animate {

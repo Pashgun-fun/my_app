@@ -3,11 +3,11 @@ import './App.css';
 import Welcome from "./components/welcome/Welcome";
 import Sections from "./components/section/Section";
 
-function App() {
+function App(props) {
   return (
    <div>
         <Welcome name = 'pavel antonov' profession = 'web developer'/>
-        <Sections />
+        <Sections state = {props.state} dispatch = {props.dispatch}/>
    </div>
   );
 }

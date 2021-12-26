@@ -2,10 +2,62 @@
   width: 5%;
   height: 100vh;
   animation: animate 2.8s linear 2.95s forwards;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   box-sizing: border-box;
 }
+.leftSection__wrapper {
+  width: 97%;
+  height: 95%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.leftSection__logo {
+  width: 100%;
+  font-size: 3rem;
+  color: #b8b8b8;
+  text-align: center;
+  animation: animateLogo 2s linear infinite alternate;
+}
 
+@keyframes animateLogo {
+  0% {
+    letter-spacing: 5px;
+  }
+  10% {
+    letter-spacing: -4px;
+  }
+  20% {
+    letter-spacing: -13px;
+  }
+  30% {
+    letter-spacing: -22px;
+  }
+  40% {
+    letter-spacing: -31px;
+  }
+  50% {
+    letter-spacing: -40px;
+  }
+  60% {
+    letter-spacing: -44px;
+  }
+  70% {
+    letter-spacing: -48px;
+  }
+  80% {
+    letter-spacing: -52px;
+  }
+  90% {
+    letter-spacing: -56px;
+  }
+  100% {
+    letter-spacing: -55px;
+  }
+}
 @keyframes animate {
   100% {
     background: #f0f0f0;

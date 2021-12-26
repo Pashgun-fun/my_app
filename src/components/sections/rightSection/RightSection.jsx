@@ -1,10 +1,12 @@
 import React from "react";
 import s from "./RightSection.module.css";
 
-export default function RightSection() {
+export default function RightSection(props) {
 
     function hideBlock(e) {
-        e.target.closest(`.${s.rightSection}`).classList.toggle(`${s.hideElement}`);
+        if (e.target.classList.contains(`${s.hideBlock}`)) {
+            e.target.parentElement.classList.toggle(`${s.hideElement}`);
+        }
     }
 
     return (<div className={s.rightSection}>
